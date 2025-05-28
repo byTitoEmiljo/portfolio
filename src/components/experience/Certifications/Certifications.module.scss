@@ -1,0 +1,81 @@
+.certWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    .cleverFinishLetter {
+      // Original: 2550 x 1803
+      min-height: 340px;
+      aspect-ratio: 2550 / 1800;
+      background-image: url('/assets/certifications/EMILIO_ISRAEL_PUGA_HERNÁNDEZ_Certificado_Clever_Excelencia.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 16px;
+    }
+    .cleverRecomendationLetter {
+      // Original: 1700 x 2200
+      min-height: 340px;
+      aspect-ratio: 1700 / 2200;
+      background-image: url('/assets/certifications/Emilio_carta_de_recomendación.jpg');
+      background-size: contain;
+      background-position: center;
+      border-radius: 16px;
+    }
+    .universidadHaking {
+      // Original: 1600 x 1190
+      min-height: 340px;
+      aspect-ratio: 1600 / 1190;
+      background-image: url('/assets/certifications/UC-3c1c69c5-f90c-4b8e-9a17-d48e33a0569d.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 16px;
+    }
+
+    .cleverFinishLetter, .cleverRecomendationLetter, .universidadHaking {
+      transition: all 0.5s ease-in-out;
+
+      display: flex;
+      justify-content: center;
+
+      .transferIcon {
+        width: 32px;
+        width: 32px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+      }
+
+      &:hover {
+        position: relative;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba($color: #FFF, $alpha: 1.0);
+        opacity: 0.4;
+
+        .transferIcon {
+          opacity: 1;
+        }
+
+      }
+    }
+
+    
+
+  }
+}
+@media (max-width: 1024px) {
+  .certWrapper {
+    .wrapper {
+      .cleverFinishLetter, .cleverRecomendationLetter, .universidadHaking {
+        min-height: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+  .text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #FFF;
+
+    .icons {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  // width: 256.5px;
+  // height: 256.5px;
+  // position: relative;
+
+  // .card1, .card2, .card3, .card4 {
+  //   position: absolute;
+  //   // height: 48.5px;
+  //   // width: 48.5px;
+  //   height: 128px;
+  //   height: 128px;
+  // }
+  // 
+  // .card1 {
+  //   color: rgba($color: #00fd37, $alpha: .8);
+  //   top: 0;
+  //   left: 0;
+  // }
+  // .card2 {
+  //   color: rgba($color: #e8b465, $alpha: .8);
+  //   top: 0;
+  //   right: 0;
+  // }
+  // .card3 {
+  //   color: rgba($color: #dccaff, $alpha: .8);
+  //   bottom: 0;
+  //   left: 0;
+  // }
+  // .card4 {
+  //   color: rgba($color: #85adf1, $alpha: .8);
+  //   bottom: 0;
+  //   right: 0;
+  // }
+
+  // &::before {
+  //   position: absolute;
+  //   clip-path: circle(50% at 50% 50%);
+  //   inset: 0;
+  //   z-index: 1;
+  //   width: 45px;
+  //   height: 45px;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   content: '';
+  //   background-color: #FFF;
+  // }
+}

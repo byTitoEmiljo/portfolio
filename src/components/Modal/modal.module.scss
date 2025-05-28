@@ -1,0 +1,108 @@
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+}
+@keyframes fadeOutBackground {
+  from {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  to {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+  &.fadeInBackground {
+    animation: fadeInBackground 0.4s ease-out forwards;
+  }
+  &.fadeOutBackground {
+    animation: fadeOutBackground 0.4s ease-out forwards;
+  }
+
+  // .closeBtn {
+  //   position: absolute;
+  //   top: 24px;
+  //   right: 24px;
+  //   width: 40px;
+  //   height: 40px;
+  //   border: 2px solid #00bbff;
+  //   border-radius: 25%;
+  //   background: none;
+  //   &:hover {
+  //     box-shadow: 0 0 8px 1px #00bbff;
+
+  //   }
+  // }
+  
+  .certImg {
+    position: inherit;
+    min-height: 90%;
+    background-size: contain;
+    background-position: center;
+    border-radius: 16px;
+    z-index: 11;
+
+    &.fadeIn {
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+    &.fadeOut {
+      animation: fadeOut 0.4s ease-out forwards;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .modalWrapper {
+    .certImg {
+      min-height: 0;
+      width: 80%;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.glob {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1;
+
+  .mapContent {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    padding: 1px;
+    background: none;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &::after, &::before{
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background-image: conic-gradient(from var(--angle), #ff4545, #5a6ff9, #5a6ff9, #ff4545);
+      inset: -2px;
+      z-index: -1;
+      animation: 3s spin linear infinite;
+    }
+    &:hover {
+      &::before {
+        transition: .5s ease-out;
+        filter: blur(1.5rem);
+        opacity: 1;
+      }
+      
+    }
+    @keyframes spin{
+      from {
+        --angle: 0deg;
+      }
+      to {
+        --angle: 360deg;
+      }
+    }
+  }
+  
+}

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -8,6 +8,15 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+:root {
+  font-family: var(--font-geist-audiowide), sans-serif;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 html,
@@ -16,14 +25,29 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--font-geist-audiowide), sans-serif;
+}
+.jetBrains-text {
+  font-family: var(--font-geist-jet-brains), sans-serif;
+}
+
+body {
+  /* background: #0b0d15; */
+  background: #0c0c0d;
+  /* color: var(--foreground); */
+  /* background: var(--background); */
+  /* font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+/* 
 * {
   box-sizing: border-box;
   padding: 0;
@@ -39,4 +63,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
