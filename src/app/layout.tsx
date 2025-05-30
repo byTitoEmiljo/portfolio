@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { JetBrains_Mono, Audiowide } from "next/font/google";
 import Modal from "@/components/Modal";
 import "./globals.css";
