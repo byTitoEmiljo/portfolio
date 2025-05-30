@@ -5,16 +5,12 @@ import styles from "./glitch.module.scss"
 
 export default function Glitch({ text, className = "" }: { text: string; className?: string }) {
   const [glitchedText, setGlitchedText] = useState(text)
-  const [isGlitching, setIsGlitching] = useState(false)
 
   useEffect(() => {
     const cycleGlitch = () => {
-      setIsGlitching(false) // Mantener el texto sin cambios
       setGlitchedText(text)
 
       setTimeout(() => {
-        setIsGlitching(true) // Activar glitch después de 3 segundos
-
         const glitchInterval = setInterval(() => {
           setGlitchedText(
             text

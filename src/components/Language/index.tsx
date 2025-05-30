@@ -8,7 +8,12 @@ export default function Language () {
   const [change, setChange] = useState(Boolean)
 
   const handleChange = (state: boolean) => {
-    state ? setChange(false) : setChange(true)
+    if (state) {
+      setChange(false)
+    } else {
+      setChange(true)
+    }
+    // state ? setChange(false) : setChange(true)
   }
 
   return (

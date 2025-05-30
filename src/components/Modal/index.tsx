@@ -18,7 +18,7 @@ export default function Modal () {
       setAnimateOut(true);
       const timeout = setTimeout(() => {
         setShouldRender(false);
-      }, 400); // debe coincidir con la duración de fadeOut
+      }, 400);
       return () => clearTimeout(timeout);
     }
   }, [isOpen]);

@@ -37,7 +37,12 @@ export default function Skills() {
   const [openLinux, setOpenLinux] = useState(false)
 
   const handleLinux = () => {
-    openLinux ? setOpenLinux(false) : setOpenLinux(true)
+    if (openLinux) {
+      setOpenLinux(false)
+    } else {
+      setOpenLinux(true)
+    }
+    // openLinux ? setOpenLinux(false) : setOpenLinux(true)
   }
 
   return (

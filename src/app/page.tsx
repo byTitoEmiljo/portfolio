@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./page.module.scss"
 import Glitch from "@/components/Glitch";
 import Cover from "@/components/Cover";
