@@ -11,7 +11,7 @@ import Certifications from "@/components/experience/Certifications";
 export default function Home() {
   return (
     <div className={styles.home}>
-        <Glitch text="Emilio Israel" />
+        <Glitch text="Emilio Israel"/>
         <div className={styles.customGrid}>
           <Cover />
           <Contact />

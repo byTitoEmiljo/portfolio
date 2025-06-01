@@ -1,18 +1,12 @@
 .cover {
   grid-column: 1;
-  padding: 1rem;
-  .card {
-    h1 {
-      font-size: 1rem;
-    }
-    p {
-      font-size: .6rem;
-    }
-  }
+  display: flex;
+  flex-direction: column;
 
   .switch {
     position: relative;
     display: flex;
+    margin-left: auto;
     width: 80px;
     justify-content: space-between;
     padding: .2rem;
@@ -56,6 +50,10 @@
 
 }
 
-@media (max-width: 768px) {
-  
+@media (min-width: 1024px) {
+  .cover {
+    .switch {
+      width: 144px;
+    }
+  }
 }
