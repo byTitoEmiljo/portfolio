@@ -11,34 +11,17 @@ import Certifications from "@/components/experience/Certifications";
 export default function Home() {
   return (
     <div className={styles.home}>
-      <section className={styles.section1}>
         <Glitch text="Emilio Israel" />
-        <div className={styles.subSection1}>
-          <div className={styles.cover}>
-            <Cover />
-          </div>
-          <div className={styles.contact}>
-            <Contact />
-          </div>
-          <div className={styles.technicalSkils}>
-            <Skills />
-          </div>
+        <div className={styles.customGrid}>
+          <Cover />
+          <Contact />
         </div>
-      </section>
-      
-      <section className={styles.section2}>
-        <div className={styles.clever}>
-          <CleverCloud />
-        </div>
-        <div className={styles.rbduck}>
-          <RBDuck />
-        </div>
-
-        <div className={styles.certifications}>
-          <Certifications />
-        </div>
-        <div style={{ height: '32px' }}></div>
-      </section>
+        
+        <Skills />
+        <CleverCloud />
+        <RBDuck />
+        
+        <Certifications />
     </div>
   )
 }

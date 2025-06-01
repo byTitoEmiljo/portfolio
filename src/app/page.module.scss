@@ -1,111 +1,54 @@
 
 .home {
   height: 100dvh;
-  // margin-bottom: 32px;
-  .section1, .section2 {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    // padding: 32px;
-    margin: 32px 32px 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
 
-    .subSection1 {
-      gap: 32px;
-    }
-    .cover, .contact, .technicalSkils, .clever, .rbduck, .certifications, .other {
-      position: relative;
-      border-radius: 4px;
-      padding: 48px;
-      color: white;
-      background: linear-gradient(180deg,rgba(30,30,30,1) 0%,rgb(20,20,20,1) 100%);  
-  
-      // BorderAnimation
-      &::after, &::before{
-        content: '';
-        position: absolute;
-        background-image: conic-gradient(from var(--angle), #ff4545, #5a6ff9, #5a6ff9, #f6fd49, #f6fd49, #ff4545);
-        inset: -1px;
-        border-radius: 4px;
-        z-index: -1;
-        animation: 3s spin linear infinite;
-      }
-      &:hover {
-        &::before {
-          transition: .7s ease-out;
-          inset: -3px;
-          filter: blur(1.5rem);
-          opacity: 0.5;
-        }
-      }
-      @keyframes spin{
-        from {
-          --angle: 0deg;
-        }
-        to {
-          --angle: 360deg;
-        }
-      }
-  
-    }
-  
-    .contact {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  .section2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    .clever, .rbduck {
-      flex: 1 1 45%;
-      min-width: 280px;
-    }
-    .certifications {
-      flex: 1 100%;
-      min-width: 280px;
-    }
-    .other {
-      flex: 1 1 30%;
-      min-width: 280px;
-    }
-  }
-
-  .subSection1 {
+  .customGrid {
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    .technicalSkils {
-      grid-column: 1 / -1;
+    gap: 1rem;
+  }
+  
+  :global(.RGBCard) {
+    position: relative;
+    border-radius: 4px;
+    color: white;
+    background: linear-gradient(180deg,rgba(30,30,30,1) 0%,rgb(20,20,20,1) 100%);  
+
+    // BorderAnimation
+    &::after, &::before{
+      content: '';
+      position: absolute;
+      background-image: conic-gradient(from var(--angle), #ff4545, #5a6ff9, #5a6ff9, #f6fd49, #f6fd49, #ff4545);
+      inset: -1px;
+      border-radius: 4px;
+      z-index: -1;
+      animation: 3s spin linear infinite;
+    }
+    &:hover {
+      &::before {
+        transition: .7s ease-out;
+        inset: -3px;
+        filter: blur(1.5rem);
+        opacity: 0.5;
+      }
+    }
+    @keyframes spin{
+      from {
+        --angle: 0deg;
+      }
+      to {
+        --angle: 360deg;
+      }
     }
   }
-
 }
 @media (max-width: 1024px) {
   .home{
-    .section1 {
-      .subSection1 {
-        display: flex;
-        flex-direction: column;
-      }
-      
-    }
-    .cover, .contact, .technicalSkils, .experience {
-      height: auto;
-      padding: 16px;
-    }
+    
   }
 }
-// @media (min-width: 1024px) {
-//   .home{
-//     .section1 {
-//       .subSection1 {
-//         display: flex;
-//         flex-direction: column;
-//       }
-//     }
-//   }
-// }
