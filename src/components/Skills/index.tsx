@@ -48,7 +48,7 @@ export default function Skills() {
     <div className={`${styles.skills} RGBCard`}>
       <h1>Technical Skills</h1>
       <div className={styles.programing}>
-        <h1>Progaming Lenguages</h1>
+        <h2>Progaming Lenguages</h2>
         <div className={styles.wrapper}>
           <TypeScriptIcon className={styles.icons} />
           <JsIcon className={styles.icons} />
@@ -59,7 +59,7 @@ export default function Skills() {
         </div>
       </div>
       <div className={styles.devtools}>
-        <h1>Dev Tools</h1>
+        <h2>Dev Tools</h2>
         <div className={styles.wrapper}>
           <LinuxIcon 
             className={`${openLinux ? styles.linuxIconSticky : styles.linuxIconBreathe} ${styles.icons}`} 
@@ -79,7 +79,7 @@ export default function Skills() {
         </div>
       </div>
       <div className={styles.frontend}>
-        <h1>Front End</h1>
+        <h2>Front End</h2>
         <div className={styles.wrapper}>
           <VueIcon className={styles.icons}/>
           <ReactIcon className={styles.icons} />
@@ -90,7 +90,7 @@ export default function Skills() {
           <CssIcon className={styles.icons} />
           <JsIcon className={styles.icons} />
         </div>
-        <h1>Others</h1>
+        <h2>Others</h2>
         <div className={styles.wrapper}>
           <MongoDBIcon className={styles.icons} />
           <PostmanIcon className={styles.icons} />

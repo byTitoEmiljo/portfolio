@@ -3,13 +3,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 1rem;
-  gap: 1rem;
 
-  h1 {
-    font-size: 1rem;
-  }
-  
   .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -79,14 +73,16 @@
 
   }
 }
-// @media (max-width: 1024px) {
-//   .certWrapper {
-//     .wrapper {
-//       .cleverFinishLetter, .cleverRecomendationLetter, .universidadHaking {
-//         min-height: 0;
-//         width: 100%;
-//         max-width: 100%;
-//       }
-//     }
-//   }
-// }
+@media (min-width: 1024px) {
+  .certWrapper {
+    .wrapper {
+      gap: 2rem;
+      .cleverFinishLetter, .cleverRecomendationLetter, .universidadHaking {
+        min-height: 18rem;
+        .transferIcon {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
