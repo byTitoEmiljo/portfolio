@@ -10,7 +10,7 @@ export default function Certifications () {
   const { openModal } = useModalStore()
 
   return (
-    <div className={styles.certWrapper}>
+    <div className={`${styles.certWrapper} RGBCard`}>
       <h1>Certifications</h1>
       <div className={styles.wrapper}>
         <div className={styles.cleverRecomendationLetter}>

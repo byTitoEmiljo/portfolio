@@ -42,14 +42,44 @@ export default function Skills() {
     } else {
       setOpenLinux(true)
     }
-    // openLinux ? setOpenLinux(false) : setOpenLinux(true)
   }
 
   return (
-    <div className={styles.skills}>
-      <h1 className={styles.title}>Technical Skills</h1>
+    <div className={`${styles.skills} RGBCard`}>
+      <h1>Technical Skills</h1>
+      <div className={styles.programing}>
+        <h1>Progaming Lenguages</h1>
+        <div className={styles.wrapper}>
+          <TypeScriptIcon className={styles.icons} />
+          <JsIcon className={styles.icons} />
+          <SQLIcon className={styles.icons} />
+          <PythonIcon className={styles.icons} />
+          <GoIcon className={styles.icons} />
+          <PhpIcon className={styles.icons} />
+        </div>
+      </div>
+      <div className={styles.devtools}>
+        <h1>Dev Tools</h1>
+        <div className={styles.wrapper}>
+          <LinuxIcon 
+            className={`${openLinux ? styles.linuxIconSticky : styles.linuxIconBreathe} ${styles.icons}`} 
+            onClick={handleLinux}
+          />
+          <BitBucketIcon className={styles.icons} />
+          <TrelloIcon className={styles.icons} />
+          <SourceTreeIcon className={styles.icons} />
+          { openLinux && 
+            <div className={styles.dropdown}>
+              <ArchIcon className={styles.icons} />
+              <KaliIcon className={styles.icons} />
+              <DebianIcon className={styles.icons} />
+              <UbuntuIcon className={styles.icons} />
+            </div>
+          }
+        </div>
+      </div>
       <div className={styles.frontend}>
-        <h1 className='jetBrains-text'>Front End</h1>
+        <h1>Front End</h1>
         <div className={styles.wrapper}>
           <VueIcon className={styles.icons}/>
           <ReactIcon className={styles.icons} />
@@ -60,43 +90,11 @@ export default function Skills() {
           <CssIcon className={styles.icons} />
           <JsIcon className={styles.icons} />
         </div>
-        <h1 className='jetBrains-text'>Others</h1>
+        <h1>Others</h1>
         <div className={styles.wrapper}>
           <MongoDBIcon className={styles.icons} />
           <PostmanIcon className={styles.icons} />
         </div>
-      </div>
-      <div className={styles.programing}>
-        <h1 className='jetBrains-text'>Progaming Lenguages</h1>
-        <div className={styles.wrapper}>
-          <JsIcon className={styles.icons} />
-          <TypeScriptIcon className={styles.icons} />
-          <PythonIcon className={styles.icons} />
-          <GoIcon className={styles.icons} />
-          <PhpIcon className={styles.icons} />
-          <SQLIcon className={styles.icons} />
-        </div>
-      </div>
-      <div className={styles.devtools}>
-        <h1 className='jetBrains-text'>Dev Tools</h1>
-        <div className={styles.wrapper}>
-          <div className={styles.linux}>
-            <LinuxIcon 
-              className={`${openLinux ? styles.linuxIconSticky : styles.linuxIconBreathe}`} 
-              onClick={handleLinux}
-            />
-            <div className={styles.dropdown}>
-              <ArchIcon className={styles.icons} />
-              <KaliIcon className={styles.icons} />
-              <DebianIcon className={styles.icons} />
-              <UbuntuIcon className={styles.icons} />
-            </div>
-          </div>
-          <BitBucketIcon className={styles.icons} />
-          <TrelloIcon className={styles.icons} />
-          <SourceTreeIcon className={styles.icons} />
-        </div>
-       
       </div>
     </div>
   )

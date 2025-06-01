@@ -8,22 +8,46 @@
   }
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-
+.skills { 
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: .5rem;
   text-align: center;
+  
+  h1 {
+    grid-column: 1 / -1;
+    font-size: 1rem;
+  }
+  
+  .frontend {
+    grid-column: 1 / -1;
+  }
+  .frontend, .programing, .devtools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 12px;
+    padding: .5rem;
+    gap: .5rem;
+    background: rgba(0, 0, 0, .35); 
 
-  .title {
-    width: 100%;
-    text-align: start;
+    .wrapper {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
   }
 
   .icons {
-    width: 40px;
-    height: 40px;
-    position: relative;
+    width: 1.4rem;
+    height: 1.4rem;
     transition: all 0.5s ease;
 
     &:hover {
@@ -32,81 +56,39 @@
     }
   }
   
-  .linux {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    transition: all 0.5s ease;
-    
-    // &:hover, .dropdown:hover {
-    //   .dropdown {
-    //     pointer-events: unset;
+  .wrapper > .dropdown {
+    display: flex;
+    position: inherit;
+    flex-basis: 50%;
+    align-self: flex-end;
+    left: -2.9rem;
+    padding: .4rem;
+    border-radius: 2px;
+    background-color: rgba($color: #FFF, $alpha: 0.3);
 
-    //     position: absolute;
-    //     transition: all 0.5s ease-in-out;
-    //     display: flex;
-    //     opacity: 1;
-    //   }
-    // }
-
-    .dropdown {
-      display: flex;
-      margin-left: -225%;
-      
+    &::before {
       position: absolute;
-      opacity: 0;
-      pointer-events: none;
-
+      content: '';
+      width: 24px;
+      height: 8px;
+      top: -12%;
+      left: 50%;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       background-color: rgba($color: #FFF, $alpha: 0.3);
-      margin-top: 8px;
-      padding: 16px;
-      gap: 8px;
-      border-radius: 8px;
-
-      &::after {
-        position: absolute;
-        content: '';
-        width: 24px;
-        height: 8px;
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        background-color: rgba($color: #FFF, $alpha: 0.3);
-        transform: translate(-50%, -50%);
-        top: -4px;
-        left: 50%;
-      }
+      transform: translate(-50%, -50%);
     }
+  }
+
+  .dropdown {
+    animation: all 3s ease-in-out;
   }
 
   .linuxIconBreathe {
     animation: breathe 3s ease-in-out infinite;
-
   }
   .linuxIconSticky {
     animation: none;
     transform: scale(1.2);
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
-  }
-
-  .frontend, .programing, .devtools {
-    flex: 1 1 30%; // Ocupa 45% del ancho, se acomoda en dos columnas
-    min-width: 280px; // Para evitar que colapsen demasiado en pantallas pequeñas
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    border-radius: 12px;
-    padding: 16px;
-    gap: 8px;
-    background: rgba(0, 0, 0, .35); 
-
-    .wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
   }
 }

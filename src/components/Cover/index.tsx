@@ -62,10 +62,10 @@ export default function Cover() {
   }, [isGlitching, text.title, text.body])
 
   return (
-    <div className={styles.cover}>
-      <div className={`${styles.switch} jetBrains-text`}>
+    <div className={`${styles.cover} RGBCard`}>
+      <div className={styles.switch}>
         <span className={`${styles.bottonSwitch} ${isFront ? styles.front : styles.back}`} onClick={handleChange}></span>
-        <p className={styles.textFront}>Front</p><p className={styles.textBack}>Back</p>
+        <p>Front</p><p className={styles.textBack}>Back</p>
       </div>
       {/* <Image 
         className={styles.icon}
@@ -76,7 +76,7 @@ export default function Cover() {
       /> */}
       <div className={styles.card}>
         <h1>{isGlitching ? glitchedTitle : text.title}</h1>
-        <p className={`${styles.content} jetBrains-text`}>{isGlitching ? glitchedText : text.body}</p>
+        <p className={styles.content}>{isGlitching ? glitchedText : text.body}</p>
       </div>
     </div>
   )
