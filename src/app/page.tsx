@@ -3,10 +3,8 @@ import Glitch from "@/components/Glitch";
 import Cover from "@/components/Cover";
 import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
-
-import CleverCloud from "@/components/experience/CleverCloud";
-import RBDuck from "@/components/experience/RBDuck";
-import Certifications from "@/components/experience/Certifications";
+import Experience from "@/components/Experience";
+import Certifications from "@/components/Certifications";
 
 export default function Home() {
   return (
@@ -16,11 +14,8 @@ export default function Home() {
           <Cover />
           <Contact />
         </div>
-        
         <Skills />
-        <CleverCloud />
-        <RBDuck />
-        
+        <Experience />
         <Certifications />
     </div>
   )

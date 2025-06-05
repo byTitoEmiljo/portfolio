@@ -1,6 +1,6 @@
 'use client'
 
-import { useModalStore } from '@/storage/modalStorage/modalStorage';
+import { useModalStore } from '@/storage/modalStore';
 import { useEffect, useState } from 'react';
 import styles from './modal.module.scss';
 
@@ -21,7 +21,7 @@ export default function Modal () {
       }, 400);
       return () => clearTimeout(timeout);
     }
-  }, [isOpen]);
+  }, [isOpen, shouldRender]);
 
   const handleClose = () => {
     closeModal();

@@ -13,17 +13,23 @@
     gap: 1rem;
   }
   
-  h1, h2, p, a {
+  h1, h2, p, a, li {
     transition: all 0.5s ease-in-out;
   }
-  h1 {
+  h1 > span {
+    font-size: 2rem;
+  }
+  h1, h1 > a {
     font-size: 1rem;
   }
   h2 {
     font-size: .8rem;
   }
-  p{
+  p, p > a, li {
     font-size: .6rem;
+  }
+  li {
+    margin-left: 1rem;
   }
   a {
     font-size: .4rem;
@@ -71,17 +77,20 @@
 }
 @media (min-width: 1024px) {
   .home{
+    h1 > span {
+      font-size: 3.4rem;
+    }
     h1, h1 > a {
       font-size: 2.4rem;
     }
     h2 {
       font-size: 2rem;
     }
-    p {
+    p, p > a, a, li {
       font-size: 1.2rem;
-    }
-    a {
-      font-size: 1.2rem;
+    } 
+    li {
+      margin-left: 1.4rem;
     }
     padding: 2rem;
     gap: 2rem;
@@ -91,5 +100,10 @@
     :global(.RGBCard) {
       padding: 2rem;
     }
+  }
+}
+@media (max-width: 670px) {
+  .home {
+    grid-template-columns: 1fr;
   }
 }

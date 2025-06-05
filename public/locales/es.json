@@ -1,0 +1,181 @@
+{
+  "cover": {
+    "title": "Resumen",
+    "frontend": {
+      "title": "Front-End", 
+      "content": "Cuento con +1 año de experiencia en desarrollo frontend, donde he fortalecido mis habilidades para analizar requerimientos y asegurar el correcto funcionamiento de las interfaces de usuario. He trabajado con diversas tecnologías y metodologías, lo que me ha permitido desarrollar una alta capacidad de adaptación, enfocándome en comprender la lógica y fundamentos detrás de cada framework, tecnología o metodología que utilizo. Presto atención al detalle en la depuración, validación y seguimiento de estados, optimizando el rendimiento de los sistemas que desarrollo. También tengo experiencia en la identificación y corrección de errores (bugs), así como en la mejora continua del código para garantizar un desarrollo limpio, escalable y funcional."
+    },
+    "backend": {
+      "title": "Back-End",
+      "content": "En cuanto al backend, tengo experiencia sólida en SQL y bases de datos relacionales gracias a mi trabajo como Analista de Datos. He utilizado servicios de AWS como Athena para análisis y limpieza de datos, así como la creación de nuevas tablas; también he trabajado con S3 y CloudFront para la publicación de distintos proyectos. Además, he utilizado Firebase como alternativa para bases de datos no relacionales, autenticación de usuarios y manejo de sesiones (logins y logouts)."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "items": {
+      "email": {
+        "name": "emilioisrael.ph@gmail.com",
+        "alt": "Correo",
+        "link": "https://mail.google.com/mail/?view=cm&fs=1&to=emilioisrael.ph@gmail.com",
+        "path": "/assets/icons/contact/mail-5-svgrepo-com.svg"
+      },
+      "github": {
+        "name": "byTitoEmiljo",
+        "alt": "GitHub",
+        "link": "https://github.com/byTitoEmiljo",
+        "path": "/assets/icons/contact/github-142-svgrepo-com.svg"
+      },
+      "linkedin": {
+        "name": "Emilio Israel Puga Hernández",
+        "alt": "linkedIn",
+        "link": "https://www.linkedin.com/in/emilio-israel-puga-hern%C3%A1ndez-a5a9a52a2/",
+        "path": "/assets/icons/contact/linkedin-svgrepo-com.svg"
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "items": {
+      "frontend": {
+        "name": "Front End",
+        "items": {
+          "vue": {
+            "alt": "Vue.js",
+            "path": "/assets/icons/skills/frontend/vue.svg"
+          },
+          "react": {
+            "alt": "React",
+            "path": "/assets/icons/skills/frontend/react.svg"
+          },
+          "next": {
+            "alt": "Next.js",
+            "path": "/assets/icons/skills/frontend/nextjs.svg"
+          },
+          "scss": {
+            "alt": "Scss",
+            "path": "/assets/icons/skills/frontend/scss.svg"
+          },
+          "bootstrap": {
+            "alt": "Boostrap",
+            "path": "/assets/icons/skills/frontend/bootstrap.svg"
+          },
+          "html": {
+            "alt": "HTML",
+            "path": "/assets/icons/skills/frontend/html.svg"
+          },
+          "css": {
+            "alt": "CSS",
+            "path": "/assets/icons/skills/frontend/css.svg"
+          },
+          "ts": {
+            "alt": "TypeScript",
+            "path": "/assets/icons/skills/frontend/ts.svg"
+          },
+          "js": {
+            "alt": "JavaScript",
+            "path": "/assets/icons/skills/frontend/js.svg"
+          }
+        }
+      },
+      "programing": {
+        "name": "Lenguajes de Programación",
+        "items": {
+          "js": {
+            "alt": "JavaScript",
+            "path": "/assets/icons/skills/frontend/js.svg"
+          },
+          "sql": {
+            "alt": "SQL",
+            "path": "/assets/icons/skills/lenguages/sql.svg"
+          },
+          "python": {
+            "alt": "Python",
+            "path": "/assets/icons/skills/lenguages/python.svg"
+          },
+          "go": {
+            "alt": "GoLand",
+            "path": "/assets/icons/skills/lenguages/go.svg"
+          },
+          "php": {
+            "alt": "PHP",
+            "path": "/assets/icons/skills/lenguages/php.svg"
+          }
+        }
+      },
+      "devtools": {
+        "name": "Herramientas",
+        "items": {
+          "linux": {
+            "alt": "Linux",
+            "path": "/assets/icons/skills/devtools/linux.svg",
+            "distros": {
+              "arch": {
+                "alt": "Arch Linux",
+                "path": "/assets/icons/skills/devtools/linux/arch-linux.svg"
+              },
+              "debian": {
+                "alt": "Debian",
+                "path": "/assets/icons/skills/devtools/linux/debian.svg"
+              },
+              "kali": {
+                "alt": "Kali Linux",
+                "path": "/assets/icons/skills/devtools/linux/kalilinux.svg"
+              },
+              "ubuntu": {
+                "alt": "Ubuntu",
+                "path": "/assets/icons/skills/devtools/linux/ubuntu.svg"
+              }
+            }
+          },
+          "bitbucket": {
+            "alt": "Bitbucket",
+            "path": "/assets/icons/skills/devtools/bitbucket.svg"
+          },
+          "sourcetree": {
+            "alt": "Sourcetree",
+            "path": "/assets/icons/skills/devtools/sourcetree.svg"
+          },
+          "trello": {
+            "alt": "Trello",
+            "path": "/assets/icons/skills/devtools/trello.svg"
+          }
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia ",
+    "items": {
+      "clevercloud": {
+        "jobname": "Clever Intership",
+        "company": {"name": "Clever Cloud", "link": "https://www.clevercloud.mx/"},
+        "description": "<p>Trabajé durante 6 meses en esta empresa como desarrollador fullstack, dedicada al desarrollo de aplicaciones web. Participé en un proyecto para un campo de golf <a target='_blank' href=\"https://www.golf-hub.com.mx/\">(Vista al Bosque)</a>, donde mantuve y desarrollé un sitio web orientado al cliente para gestionar reservas, así como un panel de administración para propietarios, que les permite gestionar horarios, reservas, precios, entre otras funciones.</p>"
+      },
+      "rbduck": {
+        "jobname": "FontEnd Developer",
+        "company": {"name": "Rubber Duck Enterprises", "link": "https://www.rbduck.com/about"},
+        "description": "<p>Actualmente colaboro como desarrollador en Rubber Duck Enterprises, participando en el desarrollo de proyectos para diversos clientes. Mis aportaciones han sido:</p><br><ul><li>Migre una pagina web estática que estaba echa en JavaScript y CSS puro a <b>Astro</b> y <b>Scss</b>.</li><li>Desarrollo de una aplicación web para servicios de transporte y reparto de productos, utilizando <b>Next.js</b>, <b>Scss</b>, <b>Zustand</b> y <b>AWS</b>. Algunas partes fundamentales a mencionar de esta aplicación sobre mis aportes, mantenimiento de persistencia en el inicio de sesión haciendo uso de estados locales, modal personalizado para alertas y formularios la parte importante implemente Leaflet como mapa.</li><li>Invitación para una boda, maquete toda la idea de la clienta que ella misma creo en Canva utilice <b>Next.js</b>, <b>Scss</b>, <b>Firebase</b> y <b>Motion</b>. Esta invitación cuenta con una sección para poder dejar un mensaje a los novios, este se aprueba en una sección para ellos donde se tiene un login controlado por Firebase, Motion la utilice para crear carruceles de fotos y mensajes.</li></ul>"
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "items": {
+      "recomendationclevercloud": {
+        "alt": "Carta de Recomendación - Clever Cloud",
+        "path": "/assets/certifications/Emilio_carta_de_recomendación.jpg",
+        "aspectratio": "1700 / 2200"
+      },
+      "finishletterclevercloud": {
+        "alt": "Carta de Finalización - Clever Cloud",
+        "path": "/assets/certifications/EMILIO_ISRAEL_PUGA_HERNÁNDEZ_Certificado_Clever_Excelencia.jpg",
+        "aspectratio": "2550 / 1803"
+      },
+      "hakinguniversityudemy": {
+        "alt": "Certificado de Finalización",
+        "path": "/assets/certifications/UC-3c1c69c5-f90c-4b8e-9a17-d48e33a0569d.jpg",
+        "aspectratio": "1600 / 1190"
+      }
+    }
+  }
+}

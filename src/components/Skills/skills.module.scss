@@ -44,7 +44,8 @@
 
   .icons {
     width: 1.4rem;
-    height: 1.4rem;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
     transition: all 0.5s ease;
 
     &:hover {
@@ -52,30 +53,48 @@
       filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
     }
   }
-  
+
   .wrapper > .dropdown {
     display: flex;
     position: inherit;
-    flex-basis: 50%;
-    align-self: flex-end;
-    top: 10%;
-    left: -20%;
+    flex-basis: 55%;
+    justify-content: space-between;
+    margin-left: -20px;
     padding: .4rem;
     border-radius: 2px;
-    background-color: rgba($color: #FFF, $alpha: 0.3);
+    background-color: #5b5b5b;
 
-    &::before {
+    
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   width: 20%;
+    //   height: 25%;
+    //   top: -11%;
+    //   left: 50%;
+    //   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    //   background-color: #5b5b5b;
+    //   transform: translate(-50%, -50%);
+    // }
+    
+  }
+  
+  .linuxWrapper {
+    position: relative;
+    .linux {
       position: absolute;
-      content: '';
-      width: 20%;
-      height: 25%;
-      top: -11%;
-      left: 50%;
-      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-      background-color: rgba($color: #FFF, $alpha: 0.3);
       transform: translate(-50%, -50%);
+      content: '';
+      left: 50%;
+      bottom: -41%;
+      width: 70%;
+      height: 25%;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      background-color: #5b5b5b;
     }
   }
+
+  
 
   .dropdown {
     animation: all 3s ease-in-out;
@@ -101,7 +120,6 @@
     }
     .icons {
       width: 2.4rem;
-      height: 2.4rem;
     }
     .programing {
       flex: 1 1 30%;
