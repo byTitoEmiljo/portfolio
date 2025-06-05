@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Audiowide } from "next/font/google";
 import Modal from "@/components/Modal";
+import Language from "@/components/Language";
 import "./globals.css";
 
 const geistAudiowide = Audiowide({
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={`${geistAudiowide.variable} ${geistJetBrains.variable}`}>
         <Modal />
         {children}
+        <Language />
       </body>
     </html>
   );

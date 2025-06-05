@@ -1,34 +1,24 @@
+'use client'
+
 import styles from './contact.module.scss'
+import React from 'react'
 import Link from 'next/link'
-import Mail from '@public/assets/decorations/mail-5-svgrepo-com.svg'
-import GitHub from '@public/assets/decorations/github-142-svgrepo-com.svg'
-import LinkeIn from '@public/assets/decorations/linkedin-svgrepo-com.svg'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Contact() {
+  const { t } = useTranslation()
+  if (!t) return null
+  const medias = t.contact.items
+
   return (
     <div className={`${styles.contact} RGBCard`}>
-      <h1>Contact</h1>
-      <Link 
-        href={'https://mail.google.com/mail/?view=cm&fs=1&to=emilioisrael.ph@gmail.com'} 
-        target='_blank' 
-      >
-        <Mail />
-        emilioisrael.ph@gmail.com
-      </Link>
-      <Link 
-        href={'https://github.com/byTitoEmiljo'} 
-        target='_blank' 
-      >
-        <GitHub />
-        byTitoEmiljo
-      </Link>
-      <Link 
-        href={'https://www.linkedin.com/in/emilio-israel-puga-hern%C3%A1ndez-a5a9a52a2/'} 
-        target='_blank' 
-      >
-        <LinkeIn />
-        Emilio Israel Puga Hernández
-      </Link>
+      <h1>{t.contact.title}</h1>
+      {Object.entries(medias).map(([key, value]) => (
+        <Link key={key} href={value.link} target="_blank">
+          <img src={value.path} alt={value.name}/>
+          {value.name}
+        </Link>
+      ))}
     </div>
   )
 }

@@ -6,7 +6,25 @@
   right: 24px;
   z-index: 1;
 
-  .mapContent {
+  button {
+    position: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: none;
+    background-color: #000;
+    color: #FFF;
+    font-family: var(--font-geist-audiowide), sans-serif;
+    font-size: 1.4rem;
+
+    &:hover ~ .border::before {
+      filter: blur(1.5rem);
+      opacity: 1;
+    }
+  }
+
+  .border {
+    position: inherit;
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -43,6 +61,14 @@
         --angle: 360deg;
       }
     }
+  }  
+}
+@media (min-width: 1024px) {
+  .glob {
+    height: 48px;
+    width: 48px;
+    button {
+      font-size: 1.4rem;
+    }
   }
-  
 }

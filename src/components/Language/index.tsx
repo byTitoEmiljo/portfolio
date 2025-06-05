@@ -1,29 +1,22 @@
 'use client'
 
 import styles from './language.module.scss'
-import { useState } from 'react'
-import World from '@public/icons/world-wide-black-symbol-svgrepo-com.svg'
+import { useLanguageStore } from '@/storage/languageStore'
 
 export default function Language () {
-  const [change, setChange] = useState(Boolean)
-
-  const handleChange = (state: boolean) => {
-    if (state) {
-      setChange(false)
-    } else {
-      setChange(true)
-    }
-    // state ? setChange(false) : setChange(true)
-  }
+  const {language, setLanguage} = useLanguageStore()
+  
+  const toggleLanguage = () => {
+    const newLang = language === 'es' ? 'en' : 'es';
+    setLanguage(newLang);
+    localStorage.setItem('lang', newLang);
+  };
 
   return (
     <div className={styles.glob}>
-      <button
-        onClick={() => handleChange(change)}
-        className={styles.mapContent}
-      >
-        <World height={48} width={48} />
-      </button>
+      <div className={styles.border}>
+        <button onClick={toggleLanguage}>{language.toUpperCase()}</button>
+      </div>
     </div>
   )
 }

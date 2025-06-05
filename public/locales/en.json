@@ -1,0 +1,182 @@
+{
+  "cover": {
+    "title": "Cover",
+    "frontend": {
+      "title": "Front-End", 
+      "content": "I have +1 year of experience in frontend development, where I have strengthened my skills to analyze requirements and ensure the proper functioning of user interfaces. I have worked with various technologies and methodologies, which has allowed me to develop a high adaptability, focusing on understanding the logic and fundamentals behind each framework, technology or methodology I use. I pay attention to detail in debugging, validation and state tracking, optimizing the performance of the systems I develop. I also have experience in identifying and fixing bugs, as well as in continuous code improvement to ensure a clean, scalable and functional development."
+    },
+    "backend": {
+      "title": "Back-End",
+      "content": "As for the backend, I have solid experience in SQL and relational databases thanks to my work as a Data Analyst. I have used AWS services such as Athena for data analysis and cleansing, as well as the creation of new tables; I have also worked with S3 and CloudFront for publishing different projects. In addition, I have used Firebase as an alternative for non-relational databases, user authentication and session management (logins and logouts)."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "items": {
+      "email": {
+        "name": "emilioisrael.ph@gmail.com",
+        "alt": "Mail",
+        "link": "https://mail.google.com/mail/?view=cm&fs=1&to=emilioisrael.ph@gmail.com",
+        "path": "/assets/icons/contact/mail-5-svgrepo-com.svg"
+      },
+      "github": {
+        "name": "byTitoEmiljo",
+        "alt": "GitHub",
+        "link": "https://github.com/byTitoEmiljo",
+        "path": "/assets/icons/contact/github-142-svgrepo-com.svg"
+      },
+      "linkedin": {
+        "name": "Emilio Israel Puga Hernández",
+        "alt": "linkedIn",
+        "link": "https://www.linkedin.com/in/emilio-israel-puga-hern%C3%A1ndez-a5a9a52a2/",
+        "path": "/assets/icons/contact/linkedin-svgrepo-com.svg"
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "items": {
+      "frontend": {
+        "name": "Front End",
+        "items": {
+          "vue": {
+            "alt": "Vue.js",
+            "path": "/assets/icons/skills/frontend/vue.svg"
+          },
+          "react": {
+            "alt": "React",
+            "path": "/assets/icons/skills/frontend/react.svg"
+          },
+          "next": {
+            "alt": "Next.js",
+            "path": "/assets/icons/skills/frontend/nextjs.svg"
+          },
+          "scss": {
+            "alt": "Scss",
+            "path": "/assets/icons/skills/frontend/scss.svg"
+          },
+          "bootstrap": {
+            "alt": "Boostrap",
+            "path": "/assets/icons/skills/frontend/bootstrap.svg"
+          },
+          "html": {
+            "alt": "HTML",
+            "path": "/assets/icons/skills/frontend/html.svg"
+          },
+          "css": {
+            "alt": "CSS",
+            "path": "/assets/icons/skills/frontend/css.svg"
+          },
+          "ts": {
+            "alt": "TypeScript",
+            "path": "/assets/icons/skills/frontend/ts.svg"
+          },
+          "js": {
+            "alt": "JavaScript",
+            "path": "/assets/icons/skills/frontend/js.svg"
+          }
+        }
+      },
+      "programing": {
+        "name": "Programming Languages",
+        "items": {
+          "js": {
+            "alt": "JavaScript",
+            "path": "/assets/icons/skills/frontend/js.svg"
+          },
+          "sql": {
+            "alt": "SQL",
+            "path": "/assets/icons/skills/lenguages/sql.svg"
+          },
+          "python": {
+            "alt": "Python",
+            "path": "/assets/icons/skills/lenguages/python.svg"
+          },
+          "go": {
+            "alt": "GoLand",
+            "path": "/assets/icons/skills/lenguages/go.svg"
+          },
+          "php": {
+            "alt": "PHP",
+            "path": "/assets/icons/skills/lenguages/php.svg"
+          }
+        }
+      },
+      "devtools": {
+        "name": "Tools",
+        "items": {
+          "linux": {
+            "alt": "Linux",
+            "path": "/assets/icons/skills/devtools/linux.svg",
+            "distros": {
+              "arch": {
+                "alt": "Arch Linux",
+                "path": "/assets/icons/skills/devtools/linux/arch-linux.svg"
+              },
+              "debian": {
+                "alt": "Debian",
+                "path": "/assets/icons/skills/devtools/linux/debian.svg"
+              },
+              "kali": {
+                "alt": "Kali Linux",
+                "path": "/assets/icons/skills/devtools/linux/kalilinux.svg"
+              },
+              "ubuntu": {
+                "alt": "Ubuntu",
+                "path": "/assets/icons/skills/devtools/linux/ubuntu.svg"
+              }
+            }
+          },
+          "bitbucket": {
+            "alt": "Bitbucket",
+            "path": "/assets/icons/skills/devtools/bitbucket.svg"
+          },
+          "sourcetree": {
+            "alt": "Sourcetree",
+            "path": "/assets/icons/skills/devtools/sourcetree.svg"
+          },
+          "trello": {
+            "alt": "Trello",
+            "path": "/assets/icons/skills/devtools/trello.svg"
+          }
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "items": {
+      "clevercloud": {
+        "jobname": "Clever Intership",
+        "company": {"name": "Clever Cloud", "link": "https://www.clevercloud.mx/"},
+        "description": "<p>I worked for 6 months in this company as a fullstack developer, dedicated to the development of web applications. I participated in a project for a golf course <a target='_blank' href=\"https://www.golf-hub.com.mx/\">(Vista al Bosque)</a>, where I maintained and developed a customer-oriented website to manage reservations, as well as an administration panel for owners, which allows them to manage schedules, reservations, prices, among other functions.</p>"
+      },
+      "rbduck": {
+        "jobname": "FontEnd Developer",
+        "company": {"name": "Rubber Duck Enterprises", "link": "https://www.rbduck.com/about"},
+        "description": "<p>I currently collaborate as a developer at Rubber Duck Enterprises, participating in the development of projects for various clients. My contributions have been:</p><br><ul><li>I migrated a static web page that was made in JavaScript and pure CSS to <b>Astro</b> and <b>Scss</b>.</li><li>Development of a web application for transportation and delivery services, using <b>Next.js</b>, <b>Scss</b>, <b>Zustand</b> and <b>AWS</b>. Some fundamental parts to mention of this application about my contributions, maintaining persistence in the login using local states, custom modal for alerts and forms the important part implement Leaflet as a map.</li><li>Invitation for a wedding, I mocked up all the client's idea that she created in Canva using <b>Next.js</b>, <b>Scss</b>, <b>Firebase</b> and <b>Motion</b>. This invitation has a section to leave a message to the bride and groom, this is approved in a section for them where you have a login controlled by Firebase, Motion use it to create carousels of photos and messages.</li></ul>"
+      }
+    }
+    
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": {
+      "recomendationclevercloud": {
+        "alt": "Recommendation Letter - Clever Cloud",
+        "path": "/assets/certifications/Emilio_carta_de_recomendación.jpg",
+        "aspectratio": "1700 / 2200"
+      },
+      "finishletterclevercloud": {
+        "alt": "Completion Letter - Clever Cloud",
+        "path": "/assets/certifications/EMILIO_ISRAEL_PUGA_HERNÁNDEZ_Certificado_Clever_Excelencia.jpg",
+        "aspectratio": "2550 / 1803"
+      },
+      "hakinguniversityudemy": {
+        "alt": "Completion Certificate",
+        "path": "/assets/certifications/UC-3c1c69c5-f90c-4b8e-9a17-d48e33a0569d.jpg",
+        "aspectratio": "1600 / 1190"
+      }
+    }
+  }
+}
