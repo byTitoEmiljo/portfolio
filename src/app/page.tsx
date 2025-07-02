@@ -3,6 +3,7 @@ import Glitch from "@/components/Glitch";
 import Cover from "@/components/Cover";
 import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Certifications from "@/components/Certifications";
 
@@ -15,6 +16,7 @@ export default function Home() {
           <Contact />
         </div>
         <Skills />
+        <Projects />
         <Experience />
         <Certifications />
     </div>

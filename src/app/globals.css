@@ -1,5 +1,6 @@
 :root {
   font-family: var(--font-geist-jet-brains), sans-serif;
+  --modal-color: rgb(46 46 61);
 }
 
 @property --angle{

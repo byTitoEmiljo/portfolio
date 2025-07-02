@@ -33,6 +33,17 @@
       }
     }
   },
+  "projects": {
+    "title": "Proyectos",
+    "items": {
+      "wedding": {
+        "name": "Plantilla para Boda",
+        "description": "Desarrollé una invitación digital de boda basada en un diseño predefinido, como parte de un encargo real. Utilicé el framework Astro para estructurar el proyecto, integrando componentes de React para funcionalidades interactivas como un modal de confirmación y una alerta personalizada. Implementé el manejo de estado global con Jotai, aprovechando su integración con localStorage para preservar interacciones del usuario.<br><br>La versión publicada en mi portafolio contiene datos ficticios para proteger la privacidad del cliente, pero mantiene el diseño y la lógica original del proyecto.",
+        "link": "https://wedding.bytitoemiljo.dev/",
+        "path": "/assets/projects/wedding.png"
+      }
+    }
+  },
   "skills": {
     "title": "Habilidades Técnicas",
     "items": {
