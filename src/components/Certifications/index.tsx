@@ -1,8 +1,7 @@
 'use client'
 
 import styles from './Certifications.module.scss'
-import TrasferIcon from '@public/assets/icons/decorations/transfermajor.svg'
-
+import ExpandIcon from '@public/assets/icons/decorations/expand.svg'
 import { useTranslation } from '@/hooks/useTranslation';
 import { useModalStore } from '@/storage/modalStore';
 
@@ -20,14 +19,18 @@ export default function Certifications () {
         {
           Object.entries(certifications).map(([certKey, certValue]) => (
             <div 
-              key={certKey} 
-              onClick={() => openModal(certValue.path, certValue.aspectratio)}
+              key={certKey}
               className={styles.card}
               style={{
                 aspectRatio: certValue.aspectratio,
                 backgroundImage: `url(${certValue.path})`,
               }}
-            ><TrasferIcon className={styles.transferIcon}/></div>
+            >
+              <ExpandIcon 
+                className={styles.transferIcon}
+                onClick={() => openModal('certifications', certValue.path, certValue.aspectratio)}
+              />
+            </div>
           ))
         }
       </div>

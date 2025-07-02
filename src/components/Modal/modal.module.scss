@@ -59,6 +59,15 @@
   justify-content: center;
   z-index: 10;
 
+  .closeBtn {
+    position: absolute;
+    width: 2rem;
+    top: 1rem;
+    right: 1rem;
+    opacity: .5;
+    cursor: pointer;
+  }
+
   &.fadeInBackground {
     animation: fadeInBackground 0.4s ease-out forwards;
   }
@@ -66,28 +75,18 @@
     animation: fadeOutBackground 0.4s ease-out forwards;
   }
 
-  // .closeBtn {
-  //   position: absolute;
-  //   top: 24px;
-  //   right: 24px;
-  //   width: 40px;
-  //   height: 40px;
-  //   border: 2px solid #00bbff;
-  //   border-radius: 25%;
-  //   background: none;
-  //   &:hover {
-  //     box-shadow: 0 0 8px 1px #00bbff;
-
-  //   }
-  // }
-  
-  .certImg {
+  .certImg, .normalModal {
     position: inherit;
     min-height: 90%;
     background-size: contain;
     background-position: center;
     border-radius: 16px;
     z-index: 11;
+    
+    .transferIcon {
+      width: 2rem;
+      color: #FFF;
+    }
 
     &.fadeIn {
       animation: fadeIn 0.4s ease-out forwards;
@@ -96,13 +95,31 @@
       animation: fadeOut 0.4s ease-out forwards;
     }
   }
+
+  .normalModal {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--modal-color);
+    min-height: 60%;
+    max-width: 60%;
+    color: white;
+    padding: 4rem;
+    gap: 1rem;
+    img {
+      border-radius: 6px;
+    }
+  }
 }
 @media (max-width: 1024px) {
   .modalWrapper {
-    .certImg {
+    .certImg, .normalModal {
       min-height: 0;
       width: 80%;
       max-width: 100%;
+    }
+    .normalModal {
+      padding: 2rem;
+      padding-top: 4rem;
     }
   }
 }

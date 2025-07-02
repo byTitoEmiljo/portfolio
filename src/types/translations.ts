@@ -19,6 +19,15 @@ export interface Translations {
       path: string;
     }>;
   };
+  projects: {
+    title: string;
+    items: Record<string, {
+      name: string;
+      description: string;
+      link: string;
+      path: string;
+    }>;
+  };
   skills: {
     title: string;
     items: Record<string, {

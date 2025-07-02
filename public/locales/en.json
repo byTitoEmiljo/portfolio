@@ -33,6 +33,17 @@
       }
     }
   },
+  "projects": {
+    "title": "Proyectos",
+    "items": {
+      "wedding": {
+        "name": "Wedding Template",
+        "description": "I developed a digital wedding invitation based on a predefined design, as part of a real assignment. I used the Astro framework to structure the project, integrating React components for interactive functionalities such as a confirmation modal and a custom alert. I implemented global state management with Jotai, leveraging its integration with localStorage to preserve user interactions.<br><br>The version published in my portfolio contains fictitious data to protect the client's privacy, but maintains the original design and logic of the project.",
+        "link": "https://wedding.bytitoemiljo.dev/",
+        "path": "/assets/projects/wedding.png"
+      }
+    }
+  },
   "skills": {
     "title": "Technical Skills",
     "items": {
